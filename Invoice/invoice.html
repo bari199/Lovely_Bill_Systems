@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lovely Dream's Wear</title>
+    <link rel="icon" href="../src/watermark_title.JPG" type="image/jpeg" />
+    <title>Invoice Page</title>
     <link rel="stylesheet" href="./invoice.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- Header with Lovely Logo -->
+     <div id="invoice-content">
+  <!-- All invoice content goes here -->
     <header class="navbar">
       <div class="logo-container">
         <img src="../src/logo2.JPG" alt="Lovely Logo" class="logo-img" />
@@ -69,7 +73,6 @@
         </table>
 
         <!-- Empty lines section -->
-        
 
         <!-- Footer row inside the table -->
         <table class="invoice-table footer-table">
@@ -86,7 +89,7 @@
         </table>
       </div>
     </section>
-    <section class="invoice-footer">
+    <div class="invoice-footer">
       <div class="footer-container">
         <!-- Left Section -->
         <div class="footer-left">
@@ -118,15 +121,25 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
     <!-- Footer Section -->
     <footer class="pad-footer-wrapper">
       <div class="pad-footer-left"></div>
-      <div class="pad-footer-right"></div>
+      <div class="pad-footer-right">
+        <div class="action-buttons no-print">
+      <button onclick="downloadPDF()">Download PDF</button>
+      <button onclick="window.print()">Print</button>
+    </div>
+      </div>
       <div class="pad-footer-text">
         <p>www.LovelyDreamWear.com &copy; 2025. All right Reserved.</p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <!-- html2canvas CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

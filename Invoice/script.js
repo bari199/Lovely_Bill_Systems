@@ -103,3 +103,44 @@ data.products.forEach((item) => {
     <p>Signature <span>${data.seasonSign}</span></p>
   `;
 });
+
+
+async function downloadPDF() {
+  const buttons = document.querySelectorAll(".no-print");
+  buttons.forEach((btn) => (btn.style.display = "none"));
+
+  const { jsPDF } = window.jspdf;
+
+  // Half Letter: 5.5 x 8.5 inches = 396 x 612 points
+  const pdf = new jsPDF("p", "pt", [396, 612]);
+
+  const element = document.getElementById("invoice-content");
+
+  const canvas = await html2canvas(element, {
+    scale: 2,
+    useCORS: true,
+    backgroundColor: "#fff",
+    scrollY: -window.scrollY
+  });
+
+  const imgData = canvas.toDataURL("image/png");
+
+  const imgWidth = canvas.width;
+  const imgHeight = canvas.height;
+
+  const pdfWidth = 396;
+  const pdfHeight = 612;
+
+  const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+
+  const scaledWidth = imgWidth * ratio;
+  const scaledHeight = imgHeight * ratio;
+
+  const x = (pdfWidth - scaledWidth) / 2;
+  const y = 10; // top margin
+
+  pdf.addImage(imgData, "PNG", x, y, scaledWidth, scaledHeight);
+  pdf.save("LovelyDreamWear-Invoice.pdf");
+
+  buttons.forEach((btn) => (btn.style.display = "flex"));
+}

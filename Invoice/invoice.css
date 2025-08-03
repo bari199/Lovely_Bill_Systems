@@ -8,9 +8,14 @@
 body {
   font-family: Arial, sans-serif;
   background: #fff;
-  padding: 20px;
+  padding: 20px 20px;
 }
 
+#invoice-content {
+    margin: 0 auto;
+    width: 760px; /* Slightly smaller than 396pt */
+    padding: 5px 15px;
+  }
 /* Header with Lovely Logo */
 .navbar {
   background-color: #ec3875;
@@ -197,7 +202,7 @@ body {
 }
 
 .footer-logo {
-  height: 70px;
+  height: 50px;
   margin: 5px 0;
 }
 
@@ -252,7 +257,7 @@ body {
 
 .pad-footer-left,
 .pad-footer-right {
-  flex: 1;
+  flex: 2;
   height: 100%;
 }
 
@@ -284,6 +289,25 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+/*Button sections */
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.action-buttons button {
+  background-color: #ec3875;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
 
 /* Print Styling */
 @media print {
@@ -293,6 +317,11 @@ body {
     margin: 0;
     padding: 0;
   }
+   @media print {
+        .no-print {
+          display: none !important;
+        }
+      }
 
   @page {
     size: A4;
@@ -321,78 +350,4 @@ body {
     break-inside: avoid;
   }
 }
-/* Responsive CSS Fixes */
-      @media (max-width: 768px) {
-        .header-top,
-        .bill-to-row,
-        .contact-row,
-        .footer-container,
-        .footer-right {
-          flex-direction: column;
-          align-items: flex-start;
-        }
 
-        .bill-no,
-        .right {
-          text-align: left;
-          margin-top: 10px;
-        }
-
-        .haat-row label,
-        .contact-row span {
-          font-size: 13px;
-        }
-
-        .invoice-table th,
-        .invoice-table td {
-          font-size: 13px;
-          padding: 8px;
-        }
-
-        .footer-left,
-        .footer-right {
-          width: 100%;
-        }
-
-        .footer-right {
-          flex-direction: column;
-        }
-
-        .footer-right-left,
-        .footer-right-right {
-          width: 100%;
-        }
-
-        .dotted-line {
-          width: 100%;
-        }
-
-        .pad-footer-text {
-          font-size: 10px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        body {
-          padding: 10px;
-          font-size: 13px;
-        }
-
-        .logo-img {
-          height: 35px;
-        }
-
-        .invoice-table th,
-        .invoice-table td {
-          font-size: 12px;
-          padding: 6px;
-        }
-
-        .footer-logo {
-          height: 50px;
-        }
-
-        .pad-footer-text {
-          font-size: 9px;
-        }
-      }
