@@ -176,12 +176,23 @@ body {
   gap: 10px;
   margin-top: 10px;
 }
+.product-table-title {
+  background-color: #e91e63;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+  width: 100%; /* ✅ Ensures full width */
+  box-sizing: border-box; /* ✅ Respect padding inside width */
+}
 
 .product-table-wrapper {
-  max-height: 300px;
-  overflow-y: auto;
+  width: 100%;  /* ✅ Ensure full container width */
+  overflow-x: auto;
   border: 1px solid #ccc;
 }
+
 
 .product-table {
    width: 100%;
@@ -333,6 +344,9 @@ h5.section-heading {
   .product-table {
     min-width: 100%;
   }
+  .product-table-title {
+    max-width: 100%;
+  }
 
   .total-fields {
     display: flex;
@@ -391,6 +405,110 @@ h5.section-heading {
   }
 
   h5, label, p {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .receive-slip input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .btn,
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .product-table-wrapper {
+    border: none;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+}
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .flex-container,
+  .flex-container2,
+  .flex-container3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .billno-field {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label {
+    margin-bottom: 4px;
+  }
+
+  .product-section {
+    flex-direction: column;
+  }
+
+  .product-table-wrapper {
+    width: 100%;
+  }
+
+  .submit-btn {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    display: none;
+  }
+
+  .footer-wrapper {
+    justify-content: center;
+    background-color: #ec3875;
+  }
+
+  .footer-text {
+    font-size: 11px;
+    text-align: center;
+  }
+  .footer-wrapper {
+    height: auto;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  h5,
+  label,
+  p {
     font-size: 13px;
   }
 
