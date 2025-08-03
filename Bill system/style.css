@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fcfbfb;
+  overflow-x: hidden; /* ✅ Prevents left overflow */
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ec3875;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Flex Container 1 */
+.flex-container {
+  display: flex;
+  margin-left: 20px; /* Remove space */
+  padding: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Flex Items inside container 1 */
+.flex-items {
+  padding: 4px 8px; /* Reduce padding */
+  font-size: 12px;
+}
+
+.flex-items:nth-child(1) {
+  color: #ec3875;
+  font-weight: 800;
+}
+
+.flex-items:nth-child(2) {
+  color: #000;
+  font-weight: 500;
+}
+.billno-field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto; /* push to right */
+}
+
+.billno-field label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.billno-field input {
+  padding: 4px 6px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.icon {
+  height: 14px;
+  width: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* Flex Container 2 */
+.flex-container2 {
+  display: flex;
+  margin-left: 20px; /* Remove space */
+  padding: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* Flex Items inside container 2 */
+.flex-items-label {
+  padding: 4px 8px; /* Smaller padding */
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.flex-items-label label {
+  margin-left: 5px;
+}
+.flex-container3 {
+  display: flex;
+  margin-left: 20px; /* Remove space */
+  padding: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+}
+.flex-items-contact:nth-child(1) {
+  padding: 4px 8px; /* Reduce padding */
+  font-size: 12px;
+}
+.flex-items-contact:nth-child(2) {
+  padding: 4px 8px; /* Reduce padding */
+  font-size: 12px;
+}
+.custom-hr {
+  border: none; /* Remove default border */
+  height: 2px; /* Set line thickness */
+  background-color: #ec3875; /* Set your desired color */
+  margin: 0; /* Optional spacing */
+}
+.form-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center; /* Label and input inline */
+  flex: 1;
+}
+
+.form-group.right {
+  margin-left: 10px;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group label {
+  min-width: 120px;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* === Product Form Section === */
+.product-details-form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 13px;
+}
+
+/* Top horizontal row that holds vertical columns */
+.product-details-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Each field column: label on top, input below */
+.product-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 100px;
+}
+
+.product-field label {
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.product-field input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Total and Rupees In Words - full row width */
+.product-inline-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-inline-row label {
+  min-width: 150px;
+  font-weight: 600;
+}
+
+.product-inline-row input {
+  width: 50%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#delete-btn {
+  background-color: #ec3875;
+  color: white;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.season-slip-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-top: 2px solid #ec3875;
+  position: relative;
+}
+
+/* Columns */
+.season-column {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 15px;
+}
+
+/* Label + input side by side */
+.season-field-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.season-field-row label {
+  min-width: 80px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.season-field-row input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+/* Buttons */
+
+.season-btn-add {
+  background-color: #ec3875;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 5px;
+}
+
+.season-btn-submit,
+.season-btn-print {
+  background-color: #ec3875;
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 5px;
+}
+
+/* Logo */
+.season-logo {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.season-logo img {
+  height: 30px;
+}
+/* ...existing styles... */
+
+.footer-wrapper {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  height: 100%;
+}
+
+.footer-left {
+  background-color: #595959;
+}
+
+.footer-right {
+  background-color: #ec3875;
+}
+
+.footer-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  width: 100%;
+  pointer-events: none;
+}
+ h5.section-heading {
+    text-align: center;
+    margin: 20px 0 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-left: 6px solid #ec3875;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+/* 🔁 Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 36px;
+  }
+
+  .flex-container,
+  .flex-container2,
+  .flex-container3 {
+    flex-direction: column;
+    margin: 10px;
+    align-items: flex-start;
+  }
+
+  .billno-field {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group.right {
+    margin-left: 0;
+  }
+
+  .product-details-row {
+    flex-direction: column;
+  }
+
+  .product-inline-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .season-slip-section {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .season-column {
+    margin: 10px 0;
+  }
+
+  .season-logo {
+    position: static;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .season-logo img {
+    height: 30px;
+  }
+
+  .footer-text {
+    font-size: 11px;
+    padding: 4px;
+  }
+
+  .footer-left,
+  .footer-right {
+    display: none;
+  }
+
+  .footer-wrapper {
+    justify-content: center;
+    background-color: #ec3875;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .logo img {
+    height: 30px;
+    width: auto;
+  }
+
+  h5, label, p {
+    font-size: 13px;
+  }
+
+  .form-group label,
+  .product-field label,
+  .season-field-row label {
+    min-width: 100px;
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .product-field input,
+  .season-field-row input,
+  .product-inline-row input {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .product-inline-row label {
+    min-width: 100px;
+    font-size: 13px;
+  }
+
+  .product-details-row,
+  .form-row,
+  .product-inline-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .season-btn-submit,
+  .season-btn-add,
+  .season-btn-print,
+  #delete-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 10px;
+    padding: 6px;
+    text-align: center;
+  }
+
+  .season-logo img {
+    max-width: 50%;
+    max-height: 30px;
+    width: auto;
+    object-fit: contain;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    position: center;
+    height: auto;
+  }
+
+  input[type="text"],
+  input[type="date"] {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./edit.css" />
+    <title>Edit Page - Lovely Dream Wear</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../src/logo2.JPG" alt="Logo" />
+      </div>
+    </nav>
+
+    <!-- Company Address Header -->
+    <h5 style="text-align: center; margin: 10px 0; color: #1d1c1c">
+      Company Address
+    </h5>
+    <hr class="custom-hr" />
+    <!--Container 1-->
+    <div class="flex-container">
+      <div class="flex-items">
+        <p>COMPANY ADDRESS:</p>
+      </div>
+      <div class="flex-items">
+        <p>SARENGA | SANKRAIL | HOWRAH | 711309</p>
+      </div>
+      <div class="flex-items billno-field">
+        <label for="bill-no">Bill No :</label>
+        <input type="text" id="bill-no" placeholder="Enter Bill No" />
+      </div>
+    </div>
+
+    <!--Container 2-->
+    <div class="flex-container2">
+      <div class="flex-items-label">
+        <input type="checkbox" class="checkbox" />
+        <label for="hat1">SURIYA INTERNATIONAL HAAT</label>
+      </div>
+      <div class="flex-items-label">
+        <input type="checkbox" class="checkbox" />
+        <label for="hat2">| HOWRAH MODERN HAAT</label>
+      </div>
+      <div class="flex-items-label">
+        <input type="checkbox" class="checkbox" />
+        <label for="hat3">| ZABBAR/ABM HAAT</label>
+      </div>
+    </div>
+
+    <!--Container 3-->
+    <div class="flex-container3">
+      <div class="flex-items-contact">
+        <p>
+          <img src="../src/call.png" alt="Call" class="icon" />
+          +91 84799 56941
+        </p>
+      </div>
+      <div class="flex-items-contact">
+        <p>
+          <img src="../src/whatsapp.png" alt="WhatsApp" class="icon" />
+          +91 8910521247
+        </p>
+      </div>
+    </div>
+
+    <hr class="custom-hr" />
+
+    <!--Container 4: Form -->
+    <form class="form-container">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="billto">Bill To :</label>
+          <input type="text" id="billto" placeholder="Bill To….." />
+        </div>
+        <div class="form-group right">
+          <label for="date">Date :</label>
+          <input type="date" id="date" placeholder="Enter Date" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Company Name :</label>
+          <input type="text" id="name" placeholder="Enter Company Name" />
+        </div>
+        <div class="form-group right">
+          <label for="product">Product Details :</label>
+          <input
+            type="text"
+            id="product"
+            placeholder="Enter Product Detail ….."
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="address">Company Address :</label>
+          <input type="text" id="address" placeholder="Enter Company Address" />
+        </div>
+      </div>
+    </form>
+
+    <div class="product-section">
+      <div class="product-table-wrapper">
+        <h5 style="background-color: #e91e63; color: white; padding: 5px; text-align: center; font-size: 15px;">
+          Product Calculation
+        </h5>
+        <table class="product-table">
+          <thead>
+            <tr>
+              <th>Qty</th>
+              <th>Description</th>
+              <th>Serial No</th>
+              <th>Rate Amount</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="total-fields">
+          <div class="form-group">
+            <label for="total">Total:</label>
+            <input type="text" id="total" readonly disabled />
+          </div>
+          <div class="form-group">
+            <label for="rupeesInWord">Rupees in Words:</label>
+            <input type="text" id="rupeesInWord" disabled />
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn edit">Edit</button>
+          <button class="btn save">Save</button>
+        </div>
+      </div>
+
+      <div class="receive-slip">
+        <h4>Recive Slips</h4>
+        <div class="form-group">
+          <label>Name :</label>
+          <input type="text" placeholder="Enter Your Full Name" />
+        </div>
+        <div class="form-group">
+          <label>Address :</label>
+          <input type="text" placeholder="Enter Your Address" />
+        </div>
+        <div class="form-group">
+          <label>Net Amount :</label>
+          <input type="text" placeholder="Enter Amount" />
+        </div>
+        <div class="form-group">
+          <label>Qty :</label>
+          <input type="text" placeholder="Enter Qty" />
+        </div>
+        <div class="form-group">
+          <label>Box :</label>
+          <input type="text" placeholder="Total Box" />
+        </div>
+
+        <div class="form-group">
+          <label>Signature :</label>
+          <input type="text" placeholder="Signature" />
+        </div>
+        <button class="btn">Edit</button>
+        <button class="btn">save</button>
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer-wrapper">
+      <div class="footer-left"></div>
+      <div class="footer-right"></div>
+      <div class="footer-text">
+        <p>www.LovelyDreamWear.com &copy; 2025. All right Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

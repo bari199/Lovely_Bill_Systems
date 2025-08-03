@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lovely Dream's Wear</title>
+    <link rel="stylesheet" href="./invoice.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header with Lovely Logo -->
+    <header class="navbar">
+      <div class="logo-container">
+        <img src="../src/logo2.JPG" alt="Lovely Logo" class="logo-img" />
+      </div>
+    </header>
+
+    <!-- Invoice Header Section -->
+    <section class="invoice-header">
+      <div class="header-top">
+        <div class="location">SARENGA | SANKRAIL | HOWRAH | 711309</div>
+        <div class="bill-no">Bill No. _________</div>
+      </div>
+
+      <div class="haat-row">
+        <label><input type="checkbox" /> SURIYA INTERNATIONAL HAAT</label>
+        <label><input type="checkbox" /> HOWRAH MODERN HAAT</label>
+        <label><input type="checkbox" /> ZABBAR/ABM HAAT</label>
+      </div>
+
+      <div class="contact-row">
+        <span
+          ><img class="icon" src="../src/whatsapp.png " alt="whatsapp.png" />
+          +91 84790 56941</span
+        >
+        <span
+          ><img class="icon" src="../src/call.png " alt="call.png" /> +91
+          8910521247</span
+        >
+      </div>
+
+      <div class="bill-to-row">
+        <div class="left">
+          <p><strong>Bill To</strong></p>
+          <p>Company Name:<span class="dotted-line"></span></p>
+          <p>Company Address:<span class="dotted-line"></span></p>
+          <p>Product Details:<span class="dotted-line"></span></p>
+        </div>
+        <div class="right">
+          <p><strong>Date:</strong> ____ / ____ / ______</p>
+        </div>
+      </div>
+    </section>
+    <section class="invoice-pad">
+      <div class="table-container">
+        <table class="invoice-table no-rows">
+          <thead>
+            <tr>
+              <th>Qty.</th>
+              <th>Description</th>
+              <th>SL No.</th>
+              <th>Rate</th>
+              <th>Net Amount</th>
+            </tr>
+          </thead>
+        </table>
+
+        <!-- Empty lines section -->
+        
+
+        <!-- Footer row inside the table -->
+        <table class="invoice-table footer-table">
+          <tr>
+            <td colspan="2" class="rupees-cell">
+              <strong>Rupees in words:</strong>
+              ______________________________
+            </td>
+            <td colspan="2" class="total-label-cell">
+              <strong>Total:</strong>
+            </td>
+            <td class="total-value-cell">____________</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="invoice-footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <p><strong>Bill No: .........</strong></p>
+          <img src="../src/lovels.png" alt="Lovely Logo" class="footer-logo" />
+          <div class="contact-info">
+            <span>
+              <img class="icon" src="../src/call.png" alt="call" />
+              +91 84799 56941
+            </span>
+            <span>
+              <img class="icon" src="../src/whatsapp.png" alt="whatsapp" />
+              +91 8910521247
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Section (Split into two columns) -->
+        <div class="footer-right">
+          <div class="footer-right-left">
+            <p>Company Name: <span class="dotted-line"></span></p>
+            <p>Box: <span class="dotted-line"></span></p>
+            <p>Net Amount: <span class="dotted-line"></span></p>
+          </div>
+          <div class="footer-right-right">
+            <p>Company Address: <span class="dotted-line"></span></p>
+            <p>Qty: <span class="dotted-line"></span></p>
+            <p>Signature <span class="dotted-line"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="pad-footer-wrapper">
+      <div class="pad-footer-left"></div>
+      <div class="pad-footer-right"></div>
+      <div class="pad-footer-text">
+        <p>www.LovelyDreamWear.com &copy; 2025. All right Reserved.</p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

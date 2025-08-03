@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lovely Dream Wear</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../src/logo2.JPG" alt="Logo" />
+      </div>
+    </nav>
+
+    <!-- Company Address Header -->
+    <h5 style="text-align: center; margin: 10px 0; color: #1d1c1c">
+      Company Address
+    </h5>
+    <hr class="custom-hr" />
+    <!--Container 1-->
+    <div class="flex-container">
+      <div class="flex-items">
+        <p>COMPANY ADDRESS:</p>
+      </div>
+      <div class="flex-items">
+        <p>SARENGA | SANKRAIL | HOWRAH | 711309</p>
+      </div>
+      <div class="flex-items billno-field">
+        <label for="bill-no">Bill No :</label>
+        <input type="text" id="bill-no" placeholder="Enter Bill No" />
+      </div>
+    </div>
+
+    <!--Container 2-->
+    <div class="flex-container2">
+      <div class="flex-items-label">
+        <input type="checkbox" class="checkbox" />
+        <label for="hat1">SURIYA INTERNATIONAL HAAT</label>
+      </div>
+      <div class="flex-items-label">
+        <input type="checkbox" class="checkbox" />
+        <label for="hat2">| HOWRAH MODERN HAAT</label>
+      </div>
+      <div class="flex-items-label">
+        <input type="checkbox" class="checkbox" />
+        <label for="hat3">| ZABBAR/ABM HAAT</label>
+      </div>
+    </div>
+
+    <!--Container 3-->
+    <div class="flex-container3">
+      <div class="flex-items-contact">
+        <p>
+          <img src="../src/call.png" alt="Call" class="icon" />
+          +91 84799 56941
+        </p>
+      </div>
+      <div class="flex-items-contact">
+        <p>
+          <img src="../src/whatsapp.png" alt="WhatsApp" class="icon" />
+          +91 8910521247
+        </p>
+      </div>
+    </div>
+
+    <hr class="custom-hr" />
+
+    <!--Container 4: Form -->
+    <form class="form-container">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="billto">Bill To :</label>
+          <input type="text" id="billto" placeholder="Bill To….." />
+        </div>
+        <div class="form-group right">
+          <label for="date">Date :</label>
+          <input type="date" id="date" placeholder="Enter Date" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Company Name :</label>
+          <input type="text" id="name" placeholder="Enter Company Name" />
+        </div>
+        <div class="form-group right">
+          <label for="product">Product Details :</label>
+          <input
+            type="text"
+            id="product"
+            placeholder="Enter Product Detail ….."
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="address">Company Address :</label>
+          <input type="text" id="address" placeholder="Enter Company Address" />
+        </div>
+      </div>
+    </form>
+
+    <hr class="custom-hr" />
+
+    <!-- Product Calculation Heading -->
+    <h5 style="text-align: center; margin: 10px 0; color: #333">
+      Products Calculation
+    </h5>
+    <hr class="custom-hr" />
+    <!-- Product Details Section -->
+    <form class="product-details-form">
+      <div class="product-details-row">
+        <div class="product-field">
+          <label for="qty">Qty :</label>
+          <input type="text" id="qty" placeholder="Enter Qty" />
+        </div>
+        <div class="product-field">
+          <label for="desc">Description :</label>
+          <input
+            type="text"
+            id="desc"
+            placeholder="Enter Product Description"
+          />
+        </div>
+        <div class="product-field">
+          <label for="serial">Serial No :</label>
+          <input type="text" id="serial" placeholder="Serial No" />
+        </div>
+        <div class="product-field">
+          <label for="rate">Rate :</label>
+          <input type="text" id="rate" placeholder="Rate" />
+        </div>
+        <div class="product-field">
+          <label for="amount">Amount :</label>
+          <input type="text" id="amount" placeholder="Amount" />
+        </div>
+        <button type="button" class="season-btn-add">Add</button>
+      </div>
+
+      <div class="product-inline-row">
+        <label for="total">Total:</label>
+        <input type="text" id="total" placeholder="Enter Total Rupees" />
+        <label for="total-product">Total Product:</label>
+        <input type="text" id="total-product" disabled />
+      </div>
+
+      <div class="product-inline-row">
+        <label for="words">Rupees In Word:</label>
+        <input type="text" id="words" placeholder="Enter Rupees in Words" />
+        <label for="delete-product">Delete Product:</label>
+        <input type="text" id="delete-product" placeholder="Enter Serial No" />
+        <button type="button" id="delete-btn" class="season-btn-submit">
+          Delete
+        </button>
+      </div>
+    </form>
+
+    <hr class="custom-hr" />
+
+    <!-- Recived Slip Heading -->
+    <h5 style="text-align: center; margin: 10px 0; color: #333">
+      Received Slip
+    </h5>
+
+    <!-- Season Slip Cut Section -->
+    <div class="season-slip-section">
+      <div class="season-column">
+        <div class="season-field-row">
+          <label for="season-name">Name :</label>
+          <input
+            type="text"
+            id="season-name"
+            placeholder="Enter Your Full Name"
+          />
+        </div>
+        <div class="season-field-row">
+          <label for="season-address">Address :</label>
+          <input
+            type="text"
+            id="season-address"
+            placeholder="Enter Your Address"
+          />
+        </div>
+        <div class="season-field-row">
+          <label for="season-amount">Net Amount :</label>
+          <input type="text" id="season-amount" placeholder="Enter Amount" />
+        </div>
+      </div>
+
+      <div class="season-column">
+        <div class="season-field-row">
+          <label for="season-qty">Qty :</label>
+          <input type="text" id="season-qty" placeholder="Enter Qty" />
+        </div>
+        <div class="season-field-row">
+          <label for="season-box">Box :</label>
+          <input type="text" id="season-box" placeholder="Total Box" />
+        </div>
+        <div class="season-field-row">
+          <label for="season-sign">Signature :</label>
+          <input type="text" id="season-sign" placeholder="Signature" />
+        </div>
+      </div>
+      <div class="season-logo">
+        <img src="../src/lovels.png" alt="Season Slip Logo" />
+      </div>
+      <button id="final-submit" type="button" class="season-btn-submit">
+        Submit
+      </button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-wrapper">
+      <div class="footer-left"></div>
+      <div class="footer-right"></div>
+      <div class="footer-text">
+        <p>www.LovelyDreamWear.com &copy; 2025. All right Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
