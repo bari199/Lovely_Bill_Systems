@@ -321,3 +321,78 @@ body {
     break-inside: avoid;
   }
 }
+/* Responsive CSS Fixes */
+      @media (max-width: 768px) {
+        .header-top,
+        .bill-to-row,
+        .contact-row,
+        .footer-container,
+        .footer-right {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .bill-no,
+        .right {
+          text-align: left;
+          margin-top: 10px;
+        }
+
+        .haat-row label,
+        .contact-row span {
+          font-size: 13px;
+        }
+
+        .invoice-table th,
+        .invoice-table td {
+          font-size: 13px;
+          padding: 8px;
+        }
+
+        .footer-left,
+        .footer-right {
+          width: 100%;
+        }
+
+        .footer-right {
+          flex-direction: column;
+        }
+
+        .footer-right-left,
+        .footer-right-right {
+          width: 100%;
+        }
+
+        .dotted-line {
+          width: 100%;
+        }
+
+        .pad-footer-text {
+          font-size: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 10px;
+          font-size: 13px;
+        }
+
+        .logo-img {
+          height: 35px;
+        }
+
+        .invoice-table th,
+        .invoice-table td {
+          font-size: 12px;
+          padding: 6px;
+        }
+
+        .footer-logo {
+          height: 50px;
+        }
+
+        .pad-footer-text {
+          font-size: 9px;
+        }
+      }

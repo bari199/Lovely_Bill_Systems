@@ -329,6 +329,7 @@ h5.section-heading {
   }
 
   .form-group label {
+    text-align: left;
     min-width: 100px;
   }
 
